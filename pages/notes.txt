@@ -1,0 +1,67 @@
+# Systems and Inequality
+
+Most systems tend to benefit one group before another. And in the current world there is a lot of inequality
+in terms of power, competence, and resources. The reason for that is the positive feedback loop that associated
+with current systems. For example, if you have a lot of money, you usually can earn even more because of that. 
+On other hand it's barely the case when a poor person becomes very rich. And we see this rule everywhere: 
+the more you have - the more you get. 
+
+In human history, there was moments where people tried to tackle that problem, but all of them ended up 
+disastrously, like soviet and china's communism. It's because that they usually just punished the most 
+productive workers, which wasn't the best idea. However, someone might say that you could become 
+successful purely based on your skills and competence. But to get them you usually need the right people 
+and a resources, which not all people might have. 
+
+Yes, with the rules we have, eventually some people will adapt to them and utilize them for their benefit, 
+while others have no any idea what they should do nor resources for that to get off from the pit. 
+We can't change human nature, but... what if we change the rules itself? And not in the way that benefits 
+some group, but benefits everyone?
+
+This where the culling game kicks in. 
+
+# How The Culling Game works
+
+The idea is to create a system with initial set of rules, and allow users to change rules.
+
+This project aims to test the above idea with a simple game. The game is a decentralized system built around 
+collectible NFTs representing cards with unique properties. 
+
+Each user gotta buy cards at the start when registering. There is no limit on 
+cards amount a user can have, although you can play only with 12 cards in each battle. 
+The user can use the properties of a card to defeat other cards. 
+
+There are two rulesets. First, the rules for cards' properties. Second are meta rules. 
+Meta rules are the rules of game itself, and usually require developer knowledge for that. 
+Also, each rule is voted by all users to be accepted. Rule is accepted if 
+supermajority of user voted for it. 
+
+So far it looks like a usual Gacha or Gwent game. However, there is one feature that makes it completely 
+unique: it's possible to change the rules of game. Players begin with a basic set of cards and
+the player who got enough tokens will receive "the honored one" status. The honored one can propose new rules.
+You can get tokens either by winning battles or you can sell your cards for them. 
+
+So, the trick is that when you accept the new rules, its applied for each user's card, which means that 
+value of card shifts, and if you lucky, the rules can make your deck stronger and more valuable.
+
+## Rules for Rules 
+ But how we control to what extend users can change the rules? That's the most important part. First of all,
+ the new rules should be fair for most users without the benefiting the person who proposed it. For that,
+ we can either set a domain of possible changes, or we can make voting for each rule. 
+ The disadventage of the first approach is that it's hard to predict all possible rules, also limiting the 
+ freedom of users to choose rules. The disadventage of the second approach is that user can vote for the
+ rules that might be unreasonable and user who did not exemine the rules careful, might make a wrong choice.
+
+ For the test version I will use the first approach, but I will consider the second approach for the future.
+ Basically, there will be a list of available rules the honoroed user can choose from and apply to any card 
+ (includeding to one he don't hold) without approval of supermajority of users.
+
+ ## Cards 
+The cards will have following attributes:
+ - Name - the name of the card
+ - Points (1-10) - the higher the points, the more scores it will have. It also the field of HP 
+ - Rarity (1-10) - the chance of getting this Clipboard, where 1 - is common cards and 10 is very rare cards 
+ - Ability - some of the cards might have a special ability that can be used in the battle.
+
+All of above attributes are mutable, and can be changed by the honored one (the user who scored some 
+number of points). The price of the card is calculated based on the attributes of the card, and can be 
+sold to get the innate tokens.

@@ -1,11 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "how": "How the Culling Game works",
+  "details": "Details",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
